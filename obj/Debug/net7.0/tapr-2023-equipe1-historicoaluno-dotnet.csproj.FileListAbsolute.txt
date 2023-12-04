@@ -63,3 +63,10 @@
 /workspaces/tapr-2023-equipe1-historicoaluno-dotnet/obj/Debug/net7.0/tapr-2023-equipe1-historicoaluno-dotnet.pdb
 /workspaces/tapr-2023-equipe1-historicoaluno-dotnet/obj/Debug/net7.0/tapr-2023-equipe1-historicoaluno-dotnet.genruntimeconfig.cache
 /workspaces/tapr-2023-equipe1-historicoaluno-dotnet/obj/Debug/net7.0/ref/tapr-2023-equipe1-historicoaluno-dotnet.dll
+/workspaces/tapr-2023-equipe1-historicoaluno-dotnet/bin/Debug/net7.0/Dapr.AspNetCore.dll
+/workspaces/tapr-2023-equipe1-historicoaluno-dotnet/bin/Debug/net7.0/Dapr.Client.dll
+/workspaces/tapr-2023-equipe1-historicoaluno-dotnet/bin/Debug/net7.0/Google.Api.CommonProtos.dll
+/workspaces/tapr-2023-equipe1-historicoaluno-dotnet/bin/Debug/net7.0/Google.Protobuf.dll
+/workspaces/tapr-2023-equipe1-historicoaluno-dotnet/bin/Debug/net7.0/Grpc.Core.Api.dll
+/workspaces/tapr-2023-equipe1-historicoaluno-dotnet/bin/Debug/net7.0/Grpc.Net.Client.dll
+/workspaces/tapr-2023-equipe1-historicoaluno-dotnet/bin/Debug/net7.0/Grpc.Net.Common.dll

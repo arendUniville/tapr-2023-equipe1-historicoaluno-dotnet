@@ -1,3 +1,4 @@
+using Dapr.Client;
 using Microsoft.EntityFrameworkCore;
 using tapr_2023_equipe1_historicoaluno_dotnet.Data.HistoricoVO;
 using tapr_2023_equipe1_historicoaluno_dotnet.Models.Context;
@@ -11,14 +12,18 @@ namespace tapr_2023_equipe1_historicoaluno_dotnet.Services;
 public class HistoricoService : IHistoricoService
 {
 
-
+    private IConfiguration _configuration;
+    private DaprClient _daprClient;
     private RepositoryDbContext _dbContext;
 
 
-    public HistoricoService(RepositoryDbContext dbContext)
+    public HistoricoService(RepositoryDbContext dbContext, IConfiguration configuration)
     {
         _dbContext = dbContext;
+        _configuration = configuration;
+        _daprClient = new DaprClientBuilder().Build();
     }
+
 
 
 
@@ -51,6 +56,9 @@ public class HistoricoService : IHistoricoService
         await _dbContext.Historicos.AddAsync(vo);
         await _dbContext.SaveChangesAsync();
 
+        //Enviando Dapr
+        await PublishUpdateAsync(vo);
+
         return vo; //O id não vai retornar null aqui?
     }
 
@@ -70,6 +78,11 @@ public class HistoricoService : IHistoricoService
             _dbContext.Update(buscarHistorico); //Na referencia do código não foi atualizado o contexto, não é necessário?
 
             await _dbContext.SaveChangesAsync();
+
+            
+            //Enviando Dapr
+            await PublishUpdateAsync(buscarHistorico);
+
 
             return buscarHistorico;
         }
@@ -93,6 +106,9 @@ public class HistoricoService : IHistoricoService
         
             await _dbContext.SaveChangesAsync();
             
+            //Enviando Dapr
+            await PublishUpdateAsync(buscarHistorico);
+            
             return buscarHistorico;
         }
         else
@@ -102,4 +118,18 @@ public class HistoricoService : IHistoricoService
     }
 
 
+
+
+
+
+
+
+    
+    //Método para publicar o novo evento
+    private async Task PublishUpdateAsync(Historico vo){
+        await _daprClient.PublishEventAsync(_configuration["AppComponentService"], 
+                                                _configuration["AppComponentTopicHistoricoAluno"], 
+                                                vo);
+    }
+    
 }

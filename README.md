@@ -12,3 +12,6 @@ az login -u matheus.arend@univille.br
 ```
 
 
+dotnet build --configuration Release
+
+dapr run -f .

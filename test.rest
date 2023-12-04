@@ -1,1 +1,16 @@
 GET http://localhost:5047/api/v1/historico
+
+
+###Cadastrar
+
+POST http://localhost:5047/api/v1/historico
+Content-Type: application/json
+
+{
+    "matriculaAluno": "0000000",
+    "nomeAluno": "Matheus",
+    "idCurso": "1234",
+    "nivelCurso": "Semestre",
+    "faseDoAno": "6",
+    "notaMedia": "9.0"
+}

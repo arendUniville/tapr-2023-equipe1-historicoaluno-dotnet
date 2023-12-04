@@ -1,6 +1,8 @@
 using Azure.Identity;
+using Microsoft.Azure.Cosmos;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ValueGeneration;
+using tapr_2023_equipe1_historicoaluno_dotnet.Models.AlunoModel;
 using tapr_2023_equipe1_historicoaluno_dotnet.Models.DiplomaModel;
 using tapr_2023_equipe1_historicoaluno_dotnet.Models.HistoricoModel;
 
@@ -13,6 +15,7 @@ public class RepositoryDbContext : DbContext
 {
     public DbSet<Historico> Historicos {get; set;}
     public DbSet<Diploma> Diplomas {get; set;}
+    public DbSet<Aluno> Alunos {get; set;}
 
 
     private IConfiguration _configuration;
@@ -32,7 +35,8 @@ public class RepositoryDbContext : DbContext
         optionsBuilder.UseCosmos(
             accountEndpoint: _configuration["CosmosDBURL"],
             tokenCredential: new DefaultAzureCredential(),
-            databaseName: _configuration["CosmosDBDBName"]);
+            databaseName: _configuration["CosmosDBDBName"],
+            options => { options.ConnectionMode(ConnectionMode.Gateway); });
     }
 
 

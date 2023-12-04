@@ -1,5 +1,7 @@
+using Dapr;
 using Microsoft.AspNetCore.Mvc;
 using tapr_2023_equipe1_historicoaluno_dotnet.Data.HistoricoVO;
+using tapr_2023_equipe1_historicoaluno_dotnet.Models.AlunoModel;
 using tapr_2023_equipe1_historicoaluno_dotnet.Models.HistoricoModel;
 using tapr_2023_equipe1_historicoaluno_dotnet.Services;
 
@@ -91,6 +93,11 @@ public class HistoricoController : ControllerBase
 
         return Results.Ok(umHistorico);
     }
+
+
+
+
+
 
 
 }
