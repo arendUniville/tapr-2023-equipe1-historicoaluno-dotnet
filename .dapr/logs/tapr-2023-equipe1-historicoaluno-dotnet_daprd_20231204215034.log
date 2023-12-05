@@ -1,0 +1,38 @@
+Starting Dapr with id tapr-2023-equipe1-historicoaluno-dotnet. HTTP Port: 33409. gRPC Port: 37563
+Updating metadata for cliPID: 15917
+time="2023-12-04T21:50:34.377229958Z" level=info msg="Starting Dapr Runtime -- version 1.12.2 -- commit f954254ed520409602024ea6d507d0405afa1f07" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-04T21:50:34.401484024Z" level=info msg="Log level set to: info" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-04T21:50:34.402398682Z" level=warning msg="mTLS is disabled. Skipping certificate request and tls validation" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime.security type=log ver=1.12.2
+time="2023-12-04T21:50:34.421073697Z" level=info msg="standalone mode configured" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-04T21:50:34.421786828Z" level=info msg="app id: tapr-2023-equipe1-historicoaluno-dotnet" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-04T21:50:34.421906281Z" level=info msg="Dapr trace sampler initialized: DaprTraceSampler(P=1.000000)" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-04T21:50:34.42197697Z" level=info msg="metrics server started on :43021/" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-04T21:50:34.436345243Z" level=info msg="local service entry announced: tapr-2023-equipe1-historicoaluno-dotnet -> 172.16.5.4:43167" app_id=tapr-2023-equipe1-historicoaluno-dotnet component="mdns (nameResolution/v1)" instance=codespaces-e5c463 scope=dapr.contrib type=log ver=1.12.2
+time="2023-12-04T21:50:34.436399584Z" level=info msg="Initialized name resolution to mdns" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-04T21:50:34.43647748Z" level=info msg="Loading components…" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-04T21:50:34.440598645Z" level=info msg="Waiting for all outstanding components to be processed…" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-04T21:50:37.445093513Z" level=info msg="Component loaded: servicebus-pubsub (pubsub.azure.servicebus.topics/v1)" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-04T21:50:37.445180245Z" level=info msg="All outstanding components processed" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-04T21:50:37.445210171Z" level=info msg="Loading endpoints…" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-04T21:50:37.44548292Z" level=info msg="Waiting for all outstanding http endpoints to be processed…" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-04T21:50:37.445531631Z" level=info msg="All outstanding http endpoints processed" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-04T21:50:37.445664119Z" level=info msg="gRPC server listening on TCP address: :37563" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime.grpc.api type=log ver=1.12.2
+time="2023-12-04T21:50:37.445714984Z" level=info msg="Enabled gRPC tracing middleware" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime.grpc.api type=log ver=1.12.2
+time="2023-12-04T21:50:37.445746352Z" level=info msg="Enabled gRPC metrics middleware" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime.grpc.api type=log ver=1.12.2
+time="2023-12-04T21:50:37.445868771Z" level=info msg="Registering workflow engine for gRPC endpoint: [::]:37563" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime.grpc.api type=log ver=1.12.2
+time="2023-12-04T21:50:37.446337205Z" level=info msg="API gRPC server is running on port 37563" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-04T21:50:37.447644747Z" level=info msg="Enabled max body size HTTP middleware with size 4 MB" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime.http type=log ver=1.12.2
+time="2023-12-04T21:50:37.447693778Z" level=info msg="Enabled tracing HTTP middleware" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime.http type=log ver=1.12.2
+time="2023-12-04T21:50:37.447719376Z" level=info msg="Enabled metrics HTTP middleware" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime.http type=log ver=1.12.2
+time="2023-12-04T21:50:37.448108563Z" level=info msg="HTTP server listening on TCP address: :33409" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime.http type=log ver=1.12.2
+time="2023-12-04T21:50:37.448162614Z" level=info msg="HTTP server is running on port 33409" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-04T21:50:37.448193932Z" level=info msg="The request body size parameter is: 4" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-04T21:50:37.448248354Z" level=info msg="gRPC server listening on TCP address: :43167" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime.grpc.internal type=log ver=1.12.2
+time="2023-12-04T21:50:37.448287227Z" level=info msg="Enabled gRPC tracing middleware" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime.grpc.internal type=log ver=1.12.2
+time="2023-12-04T21:50:37.448320348Z" level=info msg="Enabled gRPC metrics middleware" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime.grpc.internal type=log ver=1.12.2
+time="2023-12-04T21:50:37.448372957Z" level=info msg="Internal gRPC server is running on port 43167" app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-04T21:50:37.449344772Z" level=info msg="application protocol: http. waiting on port 5202.  This will block until the app is listening on that port." app_id=tapr-2023-equipe1-historicoaluno-dotnet instance=codespaces-e5c463 scope=dapr.runtime type=log ver=1.12.2
+Updating metadata for app command: dotnet run --configuration Release
+Updating metadata for appPID: 16008
+You're up and running! Dapr logs will appear here.
+

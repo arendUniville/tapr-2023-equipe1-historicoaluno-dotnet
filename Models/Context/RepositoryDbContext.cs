@@ -52,7 +52,7 @@ public class RepositoryDbContext : DbContext
             .Property(p => p.Id)
             .HasValueGenerator<GuidValueGenerator>();
         modelBuilder.Entity<Historico>()
-            .HasPartitionKey(o => o.MatriculaAluno);
+            .HasPartitionKey(o => o.Id);
         
 
         
@@ -64,7 +64,7 @@ public class RepositoryDbContext : DbContext
             .Property(p => p.Id)
             .HasValueGenerator<GuidValueGenerator>();
         modelBuilder.Entity<Diploma>()
-            .HasPartitionKey(o => o.MatriculaAluno);
+            .HasPartitionKey(o => o.Id);
         
     }
 }
